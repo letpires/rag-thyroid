@@ -14,6 +14,8 @@ A proposta **não é substituir o acompanhamento médico**, realizar diagnóstic
 
 ## Como funciona
 
+![Pipeline básico de RAG](rag_fluxo_%20básico.png)
+
 O pipeline está implementado no notebook [`rag-documents.ipynb`](rag-documents.ipynb) e segue estas etapas:
 
 1. **Ingestão** — PDFs da pasta `documents/` são carregados com LangChain (`PyPDFLoader`).
@@ -74,6 +76,7 @@ rag-thyroid/
 ├── documents/          # PDFs fonte (artigos, bulas, protocolos)
 ├── chroma_db/          # Banco vetorial persistido (gerado pelo notebook)
 ├── rag-documents.ipynb # Pipeline completo de ingestão e consulta
+├── rag_fluxo_ básico.png # Diagrama do pipeline RAG
 └── README.md
 ```
 
